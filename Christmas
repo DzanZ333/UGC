@@ -1,0 +1,25 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("OP")
+
+local KillingCheats = PhantomForcesWindow:NewSection("PREMIUM")
+
+KillingCheats:CreateToggle("Skip", function(gay)
+
+G_loop = gay
+
+while G_loop do
+
+game:GetService("ReplicatedStorage"):WaitForChild("CutLineEvent"):FireServer()
+
+end)
+
+KillingCheats:CreateButton("Money", function()
+
+local args = {
+    [1] = 100000000
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("foreverpack"):WaitForChild("Claim"):FireServer(unpack(args))
+
+end)
