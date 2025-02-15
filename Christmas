@@ -12,6 +12,10 @@ while G_loop do
 
 game:GetService("ReplicatedStorage"):WaitForChild("CutLineEvent"):FireServer()
 
+wait()
+
+end
+
 end)
 
 KillingCheats:CreateButton("Money", function()
