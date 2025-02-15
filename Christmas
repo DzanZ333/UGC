@@ -27,3 +27,15 @@ local args = {
 game:GetService("ReplicatedStorage"):WaitForChild("foreverpack"):WaitForChild("Claim"):FireServer(unpack(args))
 
 end)
+
+KillingCheats:CreateButton("Rejoin", function()
+
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+
+end)
